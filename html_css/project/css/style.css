@@ -1,0 +1,77 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; /* основной размер шрифта*/
+  color: #0A143A; /* основной цвет текста*/
+}
+
+.header {
+  max-width:1146px; /* максимальная ширина*/
+  margin: auto; /* автоматическое выравнивание по середине*/
+  padding-top: 30px;
+}.navbar{
+  display: flex; /* делаем гибкий блок*/
+  align-items: center; /* выравниваем по вертикали по центру*/
+  justify-content: space-between; /* разбросать элементы по краям*/
+  margin-bottom: 24px;
+}
+/* меню в шапке */
+.navbar-menu{
+  margin-right: auto; /* автоматический отступ справа*/
+}
+.menu {
+  list-style: none; /* убираем маркеры*/
+  margin: 0; /* убираем отступы*/
+  padding-left:22px; /* внутренний отсуп слева*/
+  padding-right:22px; /* внутренний отсуп справа*/
+  display: flex;
+}
+/* Для всех пунктов меню кроме последнего */
+.menu-item:not(:last-child) {
+  margin-right: 14px; /* внутренний отсуп справа*/
+}
+.menu-link {
+  color: inherit; /* основной цвет текста как уродителя body*/
+  text-decoration: none; /* убираем подчеркивание*/
+}
+.button {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff; /* цвет текста кнопки*/
+  padding: 10px 15px; /* сверху и снизу 10px слева и справа 15px*/
+}
+.button-link {
+  color:inherit;
+}
+.button-primary {
+  background: #256eeb; /* фон */
+  border-radius: 5px; /* скругление углов*/
+  color: white;
+}
+.search-panel {
+  height: 50px; /* высота поля поиска*/
+  background: #256eeb;
+  border-radius: 5px;
+  display: flex;
+  padding: 3px;
+}
+.search-input {
+ flex-grow: 1; /* Растягивается на все свободное место*/
+ background-color: white;
+ border-radius: 5px;
+ border: none; /* удаляем рамку*/
+ padding-left: 22px;
+ padding-right: 22px;
+}
+.search-button {
+  background: #256eeb;
+  border: none;
+  color: white;
+  padding-left: 20px;
+  padding-right: 17px;
+  display: flex;
+  align-items: center;
+}
+.search-button-text {
+  margin-left: 5px;
+}
+
