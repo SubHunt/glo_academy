@@ -130,7 +130,7 @@ body {
 }
 
 .banner-item {
-  background-image: url(./images/banners/banner-image.png);
+  background-image: url(../images/banners/banner-image.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center right;
@@ -154,10 +154,6 @@ body {
   font-weight: 400;
   max-width: 50%;
   margin: 0;
-}
-
-.products {
-
 }
 
 .products-header {
