@@ -1,5 +1,6 @@
-const mainData = () => {
+const detailData = () => {
     const preloader = document.querySelector(".preloder");
+
     const renderGanreList = (ganres) => {
         const dropdownBlock = document.querySelector(".header__menu .dropdown");
         ganres.forEach((ganre) => {
@@ -87,4 +88,4 @@ const mainData = () => {
         });
 };
 
-mainData();
+detailData();
