@@ -13,17 +13,18 @@ const mainData = () => {
                 ganres.add(item.ganre);
             });
             renderAnimeList(data.anime, ganres);
+            renderGanreList(ganres);
         });
 
-    function processData(data) {
-        const ganres = new Set();
-        data.forEach((item) => {
-            ganres.add(item.ganre);
-        });
-        renderTopAnime(data.sort((a, b) => b.views - a.views).slice(0, 5));
-        renderAnimeList(data, ganres);
-        renderGanreList(ganres);
-    }
+    // function processData(data) {
+    //     const ganres = new Set();
+    //     data.forEach((item) => {
+    //         ganres.add(item.ganre);
+    //     });
+    //     renderTopAnime(data.sort((a, b) => b.views - a.views).slice(0, 5));
+    //     renderAnimeList(data, ganres);
+    //     renderGanreList(ganres);
+    // }
 
     function renderTopAnime(array) {
         const wrapper = document.querySelector(".filter__gallery");
@@ -130,7 +131,7 @@ const mainData = () => {
         ganres.forEach((ganre) => {
             dropdownBlock.insertAdjacentHTML(
                 "beforeend",
-                `<a href="/categories.html?ganre=${ganre}">${ganre}</a>`,
+                `<li><a href="/categories.html?ganre=${ganre}">${ganre}</a></li>`,
             );
         });
     }
