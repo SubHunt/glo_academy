@@ -40,17 +40,17 @@ const detailData = () => {
 
             widgetList[0].insertAdjacentHTML(
                 "beforeend",
-                `<span>Date aired:${animeObj.date}</span>`,
+                `<span>Date aired:</span>${animeObj.date}`,
             );
 
             widgetList[1].insertAdjacentHTML(
                 "beforeend",
-                `<span>Raiting:${animeObj.rating}</span>`,
+                `<span>Rating:</span>${animeObj.rating}`,
             );
 
             widgetList[2].insertAdjacentHTML(
                 "beforeend",
-                `<span>Genre:${animeObj.tags.join(", ")}</span>`,
+                `<span>Genre:</span>${animeObj.tags.join(", ")}`,
             );
 
             breadCrumb.textContent = animeObj.ganre;
