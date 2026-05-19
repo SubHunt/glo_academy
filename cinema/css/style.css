@@ -187,3 +187,24 @@ body {
 .select-cinema {
   min-width: 470px;
 }
+
+.scheme {
+  background: rgba(36, 36, 36, 0.18);
+  border-radius: 10px;
+}
+
+.scheme path:not(.light) {
+  fill: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.scheme path:not(.light):hover {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+  fill: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+}
+
