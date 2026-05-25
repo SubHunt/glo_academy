@@ -199,12 +199,7 @@
         </div>
 
         <div class="short-goods row">
-            <div
-                class="col-lg-3 col-sm-6"
-                v-for="card in data.filter(
-                    (card) => card.label.toLowerCase() === 'new',
-                )"
-            >
+            <div class="col-lg-3 col-sm-6" v-for="card in data || []">
                 <div class="goods-card">
                     <span class="label">{{ card.label.toUpperCase() }}</span>
                     <img
@@ -232,7 +227,7 @@
 </template>
 
 <script setup>
-const { data } = await useFetch("/db.json");
+const { data } = await useFetch("/api/new-products");
 
 console.log(data);
 </script>
